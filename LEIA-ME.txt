@@ -1,0 +1,35 @@
+FF SCREENSHOT HUB ONLINE — GitHub Pages + Supabase
+
+O projeto Supabase já foi criado. Agora:
+
+A) Configurar o banco
+1. No Supabase, abra SQL Editor > New query.
+2. Abra o arquivo supabase.sql, copie tudo e cole no editor.
+3. Clique Run. Isso cria a tabela privada, bucket privado e regras de acesso por usuário.
+
+B) Pegar os dados do Supabase
+1. No painel do Supabase, abra Project Settings > API.
+2. Copie Project URL e a chave pública anon/publishable (em algumas telas aparece como Publishable key).
+3. Abra config.js no Bloco de Notas e substitua os dois textos COLE_AQUI.
+4. Não use service_role nem secret key. Não envie senha do banco ao site.
+
+C) Publicar no GitHub Pages
+1. Crie no GitHub um repositório chamado ff-screenshot-hub.
+2. Envie index.html e config.js para a raiz do repositório (pode enviar também supabase.sql e este guia).
+3. Abra Settings > Pages.
+4. Em Build and deployment escolha Deploy from a branch; branch main; pasta /(root); Save.
+5. Espere o GitHub fornecer o endereço https://SEU-USUARIO.github.io/ff-screenshot-hub/.
+
+D) Usar
+1. Abra o endereço no PC e no iPhone.
+2. Crie uma conta no primeiro aparelho e confirme o e-mail se o Supabase pedir.
+3. Entre com a mesma conta nos dois aparelhos.
+4. No iPhone, escolha a captura e toque Enviar print.
+5. No PC a galeria atualiza a cada 5 segundos. Clique Copiar e cole no Discord com Ctrl+V.
+
+IMPORTANTE
+- O projeto Supabase está na região que você selecionou (o painel da imagem mostra Ohio). Não é necessário recriar.
+- O site usa uma chave pública de navegador protegida por RLS e bucket privado. Nunca publique service_role/secret key.
+- O repositório GitHub terá somente o código do site, não os prints.
+- Esta primeira versão usa o seletor de fotos dentro do site. Não aparece como aplicativo próprio no menu Compartilhar do iPhone.
+- Para acesso pelo navegador, use o mesmo login nos dois dispositivos.
